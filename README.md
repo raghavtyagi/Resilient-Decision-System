@@ -29,10 +29,6 @@ pip install -r requirements.txt
 
 uvicorn main:app --reload
 
-### 3. Open API docs
-
-http://127.0.0.1:8000/docs
-
 ## API Endpoints
 
 ### Create Request
