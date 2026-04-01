@@ -1,0 +1,21 @@
+{
+  "workflows": {
+    "loan_application": {
+      "rules": ["income_check", "credit_check"],
+      "on_pass": "APPROVED",
+      "on_fail": "MANUAL_REVIEW"
+    }
+  },
+  "rules": {
+    "income_check": {
+      "field": "income",
+      "operator": ">",
+      "value": 30000
+    },
+    "credit_check": {
+      "field": "credit_score",
+      "operator": ">",
+      "value": 650
+    }
+  }
+}
